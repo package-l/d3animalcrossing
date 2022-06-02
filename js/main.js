@@ -23,7 +23,7 @@ Promise.all([
     d3.json("data/hashtags_frequency_by_date.json"),
     d3.csv("data/tweet_text_word_frequency_not_stemmed_top100.csv"),
     d3.csv("data/animal_crossing_tweets_original_20211030_to_20211105_top1000.csv"),
-    /*d3.csv("data/animal_crossing_tweets_original2_20211107.csv", (row) => {
+    d3.csv("data/animal_crossing_tweets_original2_20211107.csv", (row) => {
 		row.tweet_id = +row.tweet_id
 		row.tweet_created_at = parseDateDensity(row.tweet_created_at)
 		return row
@@ -32,10 +32,10 @@ Promise.all([
 		row.volume = +row.volume
 		row.date = parseDateDensity(row.date)
 		return row
-	}),*/
+	}),
     d3.csv("data/animal_crossing_tweets_og_20211030_to_20211105.csv"),
 ]).then(function(data) {
-    data[4].sort(function(a, b){
+    data[5].sort(function(a, b){
         return a.tweet_created_at - b.tweet_created_at
     })
     initVisualizations(data);
