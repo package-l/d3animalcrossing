@@ -28,11 +28,11 @@ Promise.all([
 		row.tweet_created_at = parseDateDensity(row.tweet_created_at)
 		return row
 	}),
-    d3.csv("data/volume_data.csv", (row) => {
+    /*d3.csv("data/volume_data.csv", (row) => {
 		row.volume = +row.volume
 		row.date = parseDateDensity(row.date)
 		return row
-	}),
+	}),*/
     d3.csv("data/animal_crossing_tweets_og_20211030_to_20211105.csv"),
 ]).then(function(data) {
     data[5].sort(function(a, b){
