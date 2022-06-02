@@ -44,7 +44,7 @@ Promise.all([
 })
 
 function initVisualizations(allDataArray) {
-    myDensityVis = new Slider("#slider", allDataArray[5], allDataArray[6]);
+    //myDensityVis = new Slider("#slider", allDataArray[5], allDataArray[6]);
     myBubbleChart = new EmojiBubble("emojibubble", allDataArray[0], allDataArray[1]);
     myAreaChart = new StackedAreaChart("stacked-area-chart", allDataArray[2].hashtags);
     myWordFreqVis = new WordFreqVis("word-frequency-bubble-chart", allDataArray[3]);
