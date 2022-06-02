@@ -1,0 +1,359 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #8ecfca;
+    letter-spacing: 0.0625em;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullpage {
+    width: 100%;
+    height: 100vh;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;*/
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /*row-gap: 10px;*/
+}
+
+.isabelle-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-betweeen;
+    row-gap: 10px;
+}
+
+.tom-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-betweeen;
+    row-gap: 10px;
+}
+
+.blathers-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 10px;
+}
+
+.sasha-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 10px;
+}
+
+.kkslider-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 10px;
+}
+
+#explanationStackWord {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-betwefen;
+    row-gap: 10px;
+}
+
+#explanationBreak {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 10px;
+}
+
+#explanationForBeeswarm {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 10px;
+}
+#mainNav {
+    min-height: 3rem;
+    color:white;
+    background-color: #64a19d;
+    opacity:90%;
+}
+
+#mainNav .nav-link {
+    color:white;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus {
+    outline: none;
+}
+
+#mainNav .navbar-brand {
+    color: #000;
+    font-weight: 700;
+    padding: 0.9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: white;
+    outline: none;
+    background-color: #365957;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.masthead {
+    position: relative;
+    width: auto;
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(142, 207, 202, 0) 0%, rgba(142, 207, 202, .25) 75%, rgba(142, 207, 202, .75) 100%), url("../img/poster/animal-crossing-new-horizons-switch-hero.jpg");
+    /*position: relative;
+    width:auto;
+    height: auto;
+    min-height: 30rem;
+    /*max-width: 1100px;*/
+    /*padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(142, 207, 202, 0) 0%, rgba(142, 207, 202, .25) 75%, rgba(142, 207, 202, .75) 100%), url("../img/poster/animal-crossing-new-horizons-switch-hero.jpg");
+    /*https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/hero?v=2021120501*/
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;*/
+}
+.masthead h1, .masthead .h1 {
+    font:Helvetica;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background-clip: text;
+    background-color: #64a19d;
+    opacity:90%;
+}
+.masthead h2, .masthead .h2 {
+    max-width: 20rem;
+    font-size: 2rem;
+    background-color: #64a19d;
+    opacity:90%;
+}
+
+.about-section {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(to bottom, rgba(142, 207, 202, 1.0) 100%, rgba(142, 207, 202, .50) 75%, rgba(142, 207, 202, .0) 25%);
+}
+.about-section p {
+    margin-bottom: 5rem;
+}
+
+.visualizations-section {
+    padding: 5rem 0;
+    background: rgb(248, 238, 188);
+}
+
+/*.visualizations-section .featured-text {
+    padding: 2rem;
+}*/
+
+.credit-section {
+    /*padding: 5rem 0;*/
+    background-color: #8ECFCA;
+    background-size: cover;
+}
+
+.info-section {
+    padding-top: 5rem;
+    background-color: #8ecfca;
+   }
+
+.footer {
+    padding: 5rem 0;
+    background-color: 	#fffffa;
+}
+
+.btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+button {
+    border-radius: 0;
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+/* primary button */
+.btn-primary {
+    color:white;
+    background-color: #febdc3;
+    border-color: #ef758a;
+    border-radius: 10px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active    {
+    background-color: #ef758a;
+    color: #FFF;
+    border-color: #febdc3;
+}
+
+/*.vizButton {
+    background-color: #68b893;
+    color: white;
+    height: 40px;
+    width: 80px;
+    font-size: medium;
+    border-radius: 8px;
+    border: none
+}*/
+.vizButton:hover,
+.vizButton:focus,
+.vizButton:active    {
+    background-color: #ef758a;
+    color: #FFF;
+    border-color: #febdc3;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+select {
+    word-wrap: normal;
+}
+select:disabled {
+    opacity: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/*.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.row-cols-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+}*/
+
+#stacked-area-chart {
+    height: 100%;
+    width: 100%;
+}
+
+#area-chart-wrapper {
+    height: 70vh;
+}
+
+.character {
+    height:250px;
+}
+
+div.tstooltip, div.bgtooltip {
+    position: absolute;
+    text-align: center;
+}
+
+body {
+	font-family:"avenir next", Arial, sans-serif;
+	font-size: 12px;
+	color: #696969;
+}
+
+.ticks {
+	font-size: 10px;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+	stroke-linecap: round;
+}
+
+.track {
+	stroke: #000;
+	stroke-opacity: 0.3;
+	stroke-width: 10px;
+}
+
+.track-inset {
+	stroke: #ddd;
+	stroke-width: 8px;
+}
+
+/*.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}*/
+
+.modal-content {
+    background-color: #68b893;
+    color: white;
+}
+
+.close {
+    background-color: #68b893;
+    border: none;
+    color: white;
+}
