@@ -77,64 +77,53 @@
                 </p>
             </div>
         </div>
-        <div class="row" style="padding-top: 0.05%; margin: auto;">
-            <!--<div class="container isabelle-container" style="padding-left: 4vw; padding-bottom: 1rem; height: 35vh;">
-                <div class="row">-->
-                    <div class="col-3 h-50 w-25 justify-content-right">
-                        <img class="character" src="img/characters/Isabelle_SSBU.png" alt="Isabelle" align="left"/>
-                    </div>
-                    <!--<br>[<a href="#_f1">1</a>]-->
-                    <div class="col-6 h-50 w-75 justify-content-left" id="app">
-                        <!--<dialogue>-->
-                        <div>
-                            <div class="dialogue">
-                                <div class="dialogue-blobs">
-                                    <div class="dialogue-blob-top"></div>
-                                    <div class="dialogue-blob-bottom"></div>
-                                    <div class="dialogue-text" id="dialogue-txt">With the highly anticipated 2.0 game update set to premiere
-                                        November 5th, we wanted
-                                         to take a look to see if the already highly active
-                                        community was reinvigorated and also explore what they were
-                                        talking most about!</div>
-                                </div>
-                                <div class="dialogue-character-wrap">
-                                    <div class="dialogue-character">
-                                        <span>Isabelle</span>
-                                    </div>
-                                </div>
-                                <svg class="arrow" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22.5 25C18.0184 25 7.59473 12.6404 1.55317 4.96431C-0.122281 2.83559 1.72264 -0.179893 4.39835 0.243337C10.2831 1.17415 18.2164 2.28736 22.5 2.28736C26.7836 2.28736 34.7169 1.17415 40.6017 0.243339C43.2774 -0.17989 45.1223 2.83559 43.4468 4.96431C37.4053 12.6404 26.9816 25 22.5 25Z"
-                                        fill="#F1AE04"/>
-                                 </svg>
-                            </div>
-                        </div>
-                        <!--</dialogue>-->
-                    </div>
-                <!--</div>-->
-                <script>
-                    let i = 0;
-                    let a = 0;
-                    let text = document.getElementById("dialogue-txt").innerHTML;
-                    console.log(text);
-
-                    const speed = 25;
-                    const delay = 2000;
-
-                    function typewriter() {
-                        if (i < text.length) {
-                            document.getElementById("#dialogue-text") += text.charAt(i);
-                            i++;
-                            setTimeout(typewriter, speed);
-                        }
-                    }
-                </script>
-            <!--</div>-->
-        </div>
         <div class="row w-100 h-25">
             <div class="col-12 justify-content-center">
                 <a class="btn btn-primary" href="#home">Back</a>
                 <!--<a class="btn btn-primary" href="#visualizations">Next</a>-->
-                <a class="btn btn-primary" href="#explanationStackWord">Next</a>
+                <a class="btn btn-primary" href="#isabelleText">Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="isabelleText" class="fullpage" style="padding-top: 12rem">
+    <div class="container-fluid">
+        <div class="row align-items-center h-75" style="margin:auto;">
+            <div class="col isabelle-container justify-content-center">
+                <img class="character" src="img/characters/Isabelle_SSBU.png" alt="Isabelle" align="left"/>
+                <div id="app-isabelle" style="padding-left: 3rem; height: 100px; padding-bottom: 0px;">
+                    <div>
+                        <div class="dialogue">
+                            <div class="dialogue-blobs">
+                                <div class="dialogue-blob-top"></div>
+                                <div class="dialogue-blob-bottom"></div>
+                                <div class="dialogue-text" id="dialogue-txt">With the highly anticipated 2.0 game update set to premiere
+                                    November 5th, we wanted
+                                     to take a look to see if the already highly active
+                                    community was reinvigorated and also explore what they were
+                                    talking most about!</div>
+                            </div>
+                            <div class="dialogue-character-wrap">
+                                <div class="dialogue-character">
+                                    <span>Isabelle</span>
+                                </div>
+                            </div>
+                            <svg class="arrow" width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 25C18.0184 25 7.59473 12.6404 1.55317 4.96431C-0.122281 2.83559 1.72264 -0.179893 4.39835 0.243337C10.2831 1.17415 18.2164 2.28736 22.5 2.28736C26.7836 2.28736 34.7169 1.17415 40.6017 0.243339C43.2774 -0.17989 45.1223 2.83559 43.4468 4.96431C37.4053 12.6404 26.9816 25 22.5 25Z"
+                                    fill="#F1AE04"/>
+                             </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center" style="padding-bottom: 2rem; padding-top: 2rem;">
+                <div style="padding-bottom: 2rem;">
+                    <a class="btn btn-primary" href="#about">Back</a>
+                    <!--<a class="btn btn-primary" href="#visualizations">Back</a>-->
+                    <a class="btn btn-primary" href="#explanationStackWord">Next</a>
+                </div>
             </div>
         </div>
     </div>
@@ -217,7 +206,7 @@
                 <div class="row">
                     <div class="col d-flex justify-content-center" style="padding-bottom: 2rem">
                         <div style="padding-bottom: 2rem;">
-                            <a class="btn btn-primary" href="#about">Back</a>
+                            <a class="btn btn-primary" href="#isabelleText">Back</a>
                             <!--<a class="btn btn-primary" href="#visualizations">Back</a>-->
                             <a class="btn btn-primary" href="#stacked">Next</a>
                         </div>
@@ -299,9 +288,9 @@
                             <div class="dialogue-blobs">
                                 <div class="dialogue-blob-top-blathers"></div>
                                 <div class="dialogue-blob-bottom-blathers"></div>
-                                <div class="dialogue-text" id="dialogue-txt">Let's take a deeper look into the Animal Crossing community! When examining the community, it is
-                                    important to not only understand when things are being said
-                                    or how popular any one statement may be. It is important to look at the community as a whole!</div>
+                                <div class="dialogue-text" id="dialogue-txt">Let's take a deeper look into the Animal Crossing community! What can the emoji usage
+                                    of the Twitter users unveil about the community?
+                                </div>
                             </div>
                             <div class="dialogue-character-wrap">
                                 <div class="dialogue-character">
@@ -334,22 +323,10 @@
                             game as well as other
                             available game features such as flowers, plants, crop growing, and food.
                         </p>
-                        <p class="text-black px-5" style="font-size: 16px; padding-top: 0px;">Our team
-                            observed that the jack-o-lantern emoji was
-                            used most frequently. This aligns with our expectations
-                            as the tweets encompass the day of Halloween! When examining the relationships between
-                            different emojis, we also noticed that
-                            for some reason, out of the two available red heart emojis,
-                            one heart emoji was strongly favored in terms of overall usage, yet the other was used
-                            much more frequently
-                            in the same tweet as other emojis.<!--Besides the expected categories like sentiment and hearts, it
-                            was fun to see that common <i>Animal Crossing</i> activities and updated features were also represented in the emoji usage such as plants, flowers,
-                            food, and crop growing!--> We were also happy to see that the coffee cup was a commonly
-                            used emoji. It
-                            seems like the community is very excited about Brewster's Cafe
-                            being added to the game through the November 4th update! Click the NEXT button to look
-                            through the emoji usage during the week and make your
-                            own observations! Hover and click the buttons to explore more on your own!</p>
+                        <p class="text-black px-5" style="font-size: 16px; padding-top: 0px;">Our team made some interesting observations
+                            regarding the popularity of certain emojis. In particular, we noticed the jack-o-lantern and coffee
+                            cup emojis. Can you make a guess as to why these emojis stand out to us?
+                        </p>
                     </div>
                     <div class="row">
                         <div class="col d-flex justify-content-center" style="padding-bottom: 2rem">
@@ -457,14 +434,10 @@
                             </div>
                         </form>
                     </div>
-                    <p class="text-black text-center" style="font-size: 16px;">Here, we can view the top 5 platforms that were used by
-                        the community for
-                        tweeting. We can also see the top ranked tweets by
-                        amounts of retweets or favorites. We can even combine these two items to tell which platform these
-                        tweets came from. As evident, the largest
-                        platform the community communicated from came from none other than the Nintendo Switch itself. This
-                        would seem to indicate that most users that
-                        posted about the game were posting from the device while playing the game and were either sharing
+                    <p class="text-black text-center" style="font-size: 16px;">Here, we can view the top 5 platforms that the 
+                        community used to tweet from as well as the top ranked tweets by
+                        amounts of retweets or favorites. Toggle the visualizations to see the relationships between these elements! It seems
+                        most users posted directly from their Nintendo Switch, indicating that most users were likely sharing
                         clips, pictures, or even just commenting on
                         the game in real time. </p>
                 </div>
@@ -515,19 +488,12 @@
                     <div class="container" style="padding-top: 0px;">
                         <div class="row px-3">
                             <p class="text-black py-3 px-5" style="font-size: 18px;">
-                                This next visualization shows the top 1000 retweeted Animal Tweets from 10/30/2021
-                                to
-                                11/05/2021. Each cluster contains tweets from a day in that week, and each bubble
-                                represents
-                                a single tweet. The higher the bubble is, the more times that tweet is retweeted,
+                                This next visualization shows the top 1000 retweeted Animal Tweets.
+                                The higher the bubble is, the more times that tweet is retweeted,
                                 and the
                                 larger the bubble is, the more likes that tweet has. When you hover over the bubble,
                                 you
-                                will see the actual content of the tweet and other details including the number of
-                                retweets
-                                and favorites/likes, the date and time when the tweet was created, and the source
-                                (device or
-                                platform) it was posted from.
+                                will see the actual content of the tweet and other details.
                             </p>
                         </div>
                         <div class="row">
@@ -556,8 +522,7 @@
                 <div class="row">
 
                     <div class="col px-5 align-self-center justify-content-center">
-                        <label for="user-input-keyword" style="font-size: 14px;">Search for keywords and phrases in tweet texts (use the "Reset"
-                            button to return to all results):</label>
+                        <label for="user-input-keyword" style="font-size: 14px;">Search:</label>
                         <input type="text" id="user-input-keyword" name="keyword" onchange="inputChange()">
                         <input type="button" value="Search" id="search-btn" onclick="inputChange()" class="vizButton">
                         <input type="button" value="Reset" id="reset-btn" onclick="inputReset()" class="vizButton">
@@ -603,9 +568,7 @@
                         <p style="font-size: 18px;">
                             By tracing the activity of the Animal Crossing community on Twitter, it seems apparent to
                             our team that fans of
-                            the game are both excited and very happy about the update! The update seems to
-                            have only increased excitement in the game and made the already active community more active
-                            on Twitter.
+                            the game are both excited and very happy about the update! 
                             The engagement fans have with each other about the game is extremely lively and
                             overwhelmingly positive.
                             We challenge you to find a single tweet with negative sentiment. Our team thinks it's
@@ -614,9 +577,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <a class="btn btn-primary" href="#bee">Back</a>
-                        <a class="btn btn-primary" href="#credit">Next</a>
+                    <div class="col d-flex justify-content-center" style="padding-bottom: 2rem;">
+                        <div style="padding-bottom: 2rem;">
+                            <a class="btn btn-primary" href="#bee">Back</a>
+                            <a class="btn btn-primary" href="#credit">Next</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -627,7 +592,7 @@
 <section class="credit-section" class="fullpage" id="credit" style="padding-top: 3rem">
     <div id="conclusion-sec" class="section">
         <div class="container box" style="height: 100vh">
-            <div class="kkslider-container" style="padding-top: 5vh; padding-left: 10vw; padding-right: 10vw;">
+            <!--<div class="kkslider-container" style="padding-top: 5vh; padding-left: 10vw; padding-right: 10vw;">
                 <img class="character" src="img/characters/K.K._Slider_NH.png" alt="K.K.Slider"
                      style="height: 30vh; padding-top: 1rem;"/>
                 <div id="app-kkslider"
@@ -650,11 +615,13 @@
                          </svg>
                     </div>
                 </div>        
-            </div>
-            <div class="row">
-                <div class="col pt-4">
+            </div>-->
+            <div class="row align-items-center justify-content-center">
+                <div class="col pt-4 align-items-center justify-content-center">
                     <p class="text-black" style="font-size: 16px;">
-                        If you have played this game we hope this allowed you to visualize the community which you
+                        Thank you! We hope you enjoyed our visualizations exploring Twitter data related to the
+                                Animal Crossing: New Horizons 2.0 update!
+                                If you have played this game we hope this allowed you to visualize the community which you
                         may be a part of.
                         If you have not jumped into the world, it is a great time to give it a try!
                         Additionally, our class explored the world of
@@ -700,9 +667,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 justify-content-right" style="padding-bottom: 2rem;">
-                    <a class="btn btn-primary" href="#explanationBreak2">Back</a>
-                    <a class="btn btn-primary" href="#resources">Next</a>
+                <div class="col d-flex justify-content-center" style="padding-bottom: 2rem;">
+                    <div style="padding-bottom:2rem;">
+                        <a class="btn btn-primary" href="#explanationBreak2">Back</a>
+                        <a class="btn btn-primary" href="#resources">Next</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -713,11 +682,11 @@
 <section class="info-section" class="fullpage" id="resources">
     <div id="infoSection" class="section">
         <div class="container box box2" style="padding-top: 0px; height: 100vh;">
-            <div class="row">
+            <!--<div class="row">
                 <div class="col">
                     <img class="character" src="img/characters/Brewster_NH.png" alt="Brewster"/>
                 </div>
-            </div>
+            </div>-->
             <h3>Data Sources and Methods</h3>
             <div class="row">
                 <div class="col" style="font-size:16px; padding-top: 1rem;">
@@ -803,3 +772,4 @@
 
 </body>
 </html>
+
