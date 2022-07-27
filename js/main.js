@@ -18,8 +18,6 @@ let userInputVal = document.getElementById("user-input-keyword").value;
 
 new fullpage('#fullpage', {
 	//options here
-	autoScrolling:true,
-	scrollHorizontally: true
 });
 
 // load data
