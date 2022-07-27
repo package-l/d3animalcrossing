@@ -18,7 +18,8 @@ let userInputVal = document.getElementById("user-input-keyword").value;
 
 new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
-    anchors:['firstPage', 'secondPage', 'thirdPage']
+    anchors:['firstPage', 'secondPage', 'thirdPage'],
+    scrollBar: true
 });
 
 // load data
