@@ -17,7 +17,8 @@ let parseDateDensity = d3.timeParse("%Y-%m-%d %H:%M:%S+00:00");
 let userInputVal = document.getElementById("user-input-keyword").value;
 
 new fullpage('#fullpage', {
-    licenseKey: 'gplv3-license'
+    licenseKey: 'gplv3-license',
+    anchors:['firstPage', 'secondPage', 'thirdPage']
 });
 
 // load data
