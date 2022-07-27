@@ -16,6 +16,12 @@ let config = [
 let parseDateDensity = d3.timeParse("%Y-%m-%d %H:%M:%S+00:00");
 let userInputVal = document.getElementById("user-input-keyword").value;
 
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
 // load data
 Promise.all([
     d3.csv("data/tweet_emojis.csv"),
