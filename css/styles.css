@@ -19,11 +19,11 @@ body {
     flex-direction: column;*/
 }
 
-/*.about-container {
+.about-container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-}*/
+}
 
 .isabelle-container {
     display: flex;
@@ -160,7 +160,7 @@ body {
 }
 .about-section p {
     margin-bottom: 5rem;
-}*/
+}
 
 .visualizations-section {
     padding: 5rem 0;
