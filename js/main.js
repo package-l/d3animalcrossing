@@ -20,7 +20,7 @@ new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
     anchors:['firstPage', 'secondPage', 'thirdPage'],
     navigation: true,
-    navigationPosition: left,
+    navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
     showActiveTooltip: true,
 });
