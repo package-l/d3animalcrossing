@@ -284,6 +284,10 @@ select:disabled {
     width: auto;
 }*/
 
+#stacked {
+    background-color: rgb(248, 238, 188);
+}
+
 #stacked-area-chart {
     height: 100%;
     width: 100%;
