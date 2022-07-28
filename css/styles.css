@@ -356,3 +356,8 @@ body {
     border: none;
     color: white;
 }
+
+section {
+    background-size: cover; 
+    background-position: center center;
+}
