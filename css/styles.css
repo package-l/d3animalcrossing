@@ -39,12 +39,12 @@ body {
     row-gap: 10px;
 }
 
-/*.blathers-container {
+.blathers-container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     row-gap: 10px;
-}*/
+}
 
 .sasha-container {
     display: flex;

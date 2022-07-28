@@ -241,7 +241,6 @@
             </div>
         </div>
 
-
         <!--  break to explain more-->
         <div id="explanationBreak" class="fullpage section">
             <div class="container-fluid">
@@ -299,60 +298,62 @@
         </div>
 
         <!--emoji graph-->
-        <div class="fullpage container section" id="emoji" style="padding-top: 3rem">
+        <div class="fullpage section" id="emoji" style="padding-top: 3rem">
             <!--<div class="row">-->
-            <div class="modal fade" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span style="font-size: 20pt" aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title">Instructions</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Click the Categorize button to see the emojis split into
-                                their respective categories and
-                                get a sense for which types of emojis were most popular. You
-                                can merge them back as well to see
-                                an overall comparison of what emojis the <i>Animal
-                                Crossing</i> community liked to use the most!
-                            </p>
-                            <p>
-                                Hover over
-                                each
-                                emoji to see how many times it was used over the week of
-                                November 4th and to see what other emojis it was tweeted
-                                with!
-                                Notice how the emojis that have not been used with the
-                                selected emoji will fade into the background.
-                            </p>
+            <div class="container">
+                <div class="modal fade" id="instructionModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span style="font-size: 20pt" aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Instructions</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Click the Categorize button to see the emojis split into
+                                    their respective categories and
+                                    get a sense for which types of emojis were most popular. You
+                                    can merge them back as well to see
+                                    an overall comparison of what emojis the <i>Animal
+                                    Crossing</i> community liked to use the most!
+                                </p>
+                                <p>
+                                    Hover over
+                                    each
+                                    emoji to see how many times it was used over the week of
+                                    November 4th and to see what other emojis it was tweeted
+                                    with!
+                                    Notice how the emojis that have not been used with the
+                                    selected emoji will fade into the background.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row pt-2 align-items-top">
-                <!--<div class="col-2">-->
-                <div class="col justify-content-center text-center project-text text-center text-lg-left">
-                    <h4 class="text-black">What were the most frequently used emojis
-                        by AC Twitter?</h4>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#instructionModal"
-                            style="background-color: #68b893; color: white; border-radius: 8px; border: none">
-                        Instructions
-                    </button>
-                    <button id="categorize"
-                            style="background-color: #68b893; color: white; border-radius: 8px; border: none">
-                        Categorize
-                    </button>
-                    <button id="merge"
-                            style="background-color: #68b893; color: white; border-radius: 8px; border: none">
-                        Merge
-                    </button>
+                <div class="row pt-2 align-items-top">
+                    <!--<div class="col-2">-->
+                    <div class="col justify-content-center text-center project-text text-center text-lg-left">
+                        <h4 class="text-black">What were the most frequently used emojis
+                            by AC Twitter?</h4>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#instructionModal"
+                                style="background-color: #68b893; color: white; border-radius: 8px; border: none">
+                            Instructions
+                        </button>
+                        <button id="categorize"
+                                style="background-color: #68b893; color: white; border-radius: 8px; border: none">
+                            Categorize
+                        </button>
+                        <button id="merge"
+                                style="background-color: #68b893; color: white; border-radius: 8px; border: none">
+                            Merge
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div id="emojibubble" style="height: 75vh; width: 100%;"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div id="emojibubble" style="height: 75vh; width: 100%;"></div>
+                    </div>
                 </div>
             </div>
         </div>
