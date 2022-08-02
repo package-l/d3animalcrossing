@@ -68,12 +68,7 @@ body {
     background-color: rgb(248, 238, 188);
 }
 
-#explanationBreak {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    row-gap: 10px;
-}
+
 
 #explanationForBeeswarm {
     display: flex;
