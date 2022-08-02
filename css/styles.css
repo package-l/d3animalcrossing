@@ -371,6 +371,6 @@ section {
     position:fixed !important;
  }
 
- #emoji {
+ #emoji, #bee {
     background-color: rgb(248, 238, 188);
  }
