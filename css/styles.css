@@ -73,6 +73,7 @@ body {
     flex-wrap: wrap;
     align-content: space-between;
     row-gap: 10px;
+    background-color: rgb(248, 238, 188);
 }
 
 #explanationForBeeswarm {
@@ -368,4 +369,8 @@ section {
 
 .fp-enabled .modal{
     position:fixed !important;
+ }
+
+ #emoji {
+    background-color: rgb(248, 238, 188);
  }
