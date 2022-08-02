@@ -366,6 +366,6 @@ section {
     background-position: center center;
 }
 
-.modal{
+.fp-enabled .modal{
     position:fixed !important;
  }
