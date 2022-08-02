@@ -20,6 +20,7 @@ new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
     navigation: true,
     scrollHorizontally: false,
+    anchors: ['section-home', 'section-about', 'section-isabelle', 'section-tom', 'section-stacked', 'section-word', 'section-blathers', 'section-emoji', 'section-toptweets', 'section-sasha', 'section-beeswarm', 'section-closing', 'section-credit', 'section-sources']
     /*navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
     showActiveTooltip: true,*/
