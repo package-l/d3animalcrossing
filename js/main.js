@@ -13,17 +13,14 @@ let config = [
 ];
 
 
-let parseDateDensity = d3.timeParse("%Y-%m-%d %H:%M:%S+00:00");
-let userInputVal = document.getElementById("user-input-keyword").value;
+//let parseDateDensity = d3.timeParse("%Y-%m-%d %H:%M:%S+00:00");
+//let userInputVal = document.getElementById("user-input-keyword").value;
 
 new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
     navigation: true,
     scrollHorizontally: false,
-    anchors: ['section-home', 'section-about', 'section-isabelle', 'section-tom', 'section-stacked', 'section-word', 'section-blathers', 'section-emoji', 'section-toptweets', 'section-sasha', 'section-beeswarm', 'section-closing', 'section-credit', 'section-sources']
-    /*navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    showActiveTooltip: true,*/
+    anchors: ['section-home', 'section-about', 'section-isabelle', 'section-tom', 'section-blathers', 'section-emoji', 'section-closing', 'section-credit', 'section-sources']
 });
 
 // load data
@@ -54,15 +51,7 @@ Promise.all([
 })
 
 function initVisualizations(allDataArray) {
-    //myDensityVis = new Slider("#slider", allDataArray[5], allDataArray[6]);
     myBubbleChart = new EmojiBubble("emojibubble", allDataArray[0], allDataArray[1]);
-    myAreaChart = new StackedAreaChart("stacked-area-chart", allDataArray[2].hashtags);
-    myWordFreqVis = new WordFreqVis("word-frequency-bubble-chart", allDataArray[3]);
-    for (i = 0; i < config.length; i++) {
-        mytweetsource = new TweetSource("tweetsource", allDataArray[7], config[i]);
-    }
-    myBargraph = new Bargraph("bargraph", allDataArray[7],tweetSelected)
-    mySwarmPlotVis = new SwarmPlotVis("swarm-plot", allDataArray[4]);
 }
 
 // take user input of keyword or phrase searches in the swarm plot
@@ -82,19 +71,17 @@ function clearSelection() {
     d3.select(".tstooltip")
         .remove();
     tweetSelected = "";
-    //d3.select(".tooltip").enter()
-    //redefine tooltip so that reappears?
     tweetSelectedArray = [];
     mytweetsource.bg_sourceChart();
-    updateBarVisualization();
+    //updateBarVisualization();
 }
 
-function updateBarVisualization() {
+/*function updateBarVisualization() {
     myBargraph.wrangleData()
-}
+}*/
 
-function brushed() {
+/*function brushed() {
 	let selectionRange = d3.brushSelection(d3.select(".brush").node());
 	let selectionDomain = selectionRange.map(myDensityVis.x.invert);
 	myDensityVis.wrangleData(selectionDomain);
-}
+}*/
