@@ -20,7 +20,7 @@ new fullpage('#fullpage', {
     licenseKey: 'gplv3-license',
     navigation: true,
     scrollHorizontally: false,
-    anchors: ['section-home', 'section-about', 'section-isabelle', 'section-tom', 'section-blathers', 'section-emoji', 'section-closing', 'section-credit', 'section-sources']
+    anchors: ['section-home', 'section-about', 'section-isabelle', 'section-blathers', 'section-emoji', 'section-closing', 'section-credit', 'section-sources']
 });
 
 // load data
